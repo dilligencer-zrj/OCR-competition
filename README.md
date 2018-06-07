@@ -7,10 +7,12 @@
 
 
 2.train
+
     cd Attention-OCR
     python src/launcher.py --phase=train --data-path=train/train.txt --data-base-dir=train --log-path=log.txt --no-load-model
 
 3.test
+
     python src/launcher.py --phase=test --visualize --data-path=evaluation_data/svt/test.txt --data-base-dir=evaluation_data/svt --log-path=log.txt --load-model --model-dir=model --output-dir=results
 
 4.产生csv文件
